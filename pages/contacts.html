@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body id="body">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <nav class="nav">
+            <a href="#" class="nav__link top-text">Контрагентам</a>
+            <a href="#" class="nav__link top-text">Дизайнерам</a>
+            <a href="#" class="nav__link top-text">Вакансии</a>
+          </nav>
+          <img src="/header/logo/logo.png" alt="logo" class="header__logo" id="header__logo"/>
+          <div class="search-line top-text">
+            <img src="/header/search/search.png" alt="search-icon" />
+            Поиск
+          </div>
+          <div class="account-line top-text">
+            Вход/Регистрация
+            <img src="/header/account/acc.png" alt="account-icon" />
+            <img src="/header/account/like.png"" alt=" like-icon">
+          </div>
+<!--Burger-menu-->
+          <div class="menu">
+            <input type="checkbox" class="menu__toggle" id="menu__toggle" onclick="isMenu()"/>
+            <label for="menu__toggle" class="menu__btn">
+              <span></span>
+            </label>
+            
+            <div class="nav">
+              <img src="/header/logo/logo.png" alt="logo" class="header__logo" />
+              <nav>
+                <a href="#" class="link">Контрагентам</a>
+                <a href="#" class="link">Дизайнерам</a>
+                <a href="#" class="link">Вакансии</a>
+                <a href="#" class="link">Вход/Регистрация</a>
+              </nav>
+
+              <div class="acc-like-icon">
+                <img src="/header/account/acc.png" alt="account-icon" class="acc-like-icon__acc"/>
+                <img src="/header/account/like.png"" alt="like-icon" class="acc-like-icon__like">
+              </div>
+
+              <div class="social-icon">
+                <img
+                  src="/menu/social-icon/youtube.png"
+                  alt="youtube"
+                  class="icon"
+                />
+
+                <img src="/menu/social-icon/vk.png" alt="vk" class="icon" />
+
+                <img
+                  src="/menu/social-icon/facebook.png"
+                  alt="facebook"
+                  class="icon"
+                />
+
+                <img
+                  src="/menu/social-icon/telegram.png"
+                  alt="telegram"
+                  class="icon"
+                />
+
+                <img src="/menu/social-icon/etsy.png" alt="etsy" class="icon" />
+              </div>
+              <!--social-icon-->
+            </div>
+            <!--nav-->
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="contacts">
+      <div class="conainer">
+        <div class="section">
+          <div class="way">
+            <a href="/index.html">Главная</a> /
+            <a href="/pages/catalog.html">контакты</a>
+          </div>
+          <!--way-->
+          <div class="contact-title">Контакты</div>
+
+          <div class="contact-list">
+            <div class="contact-list__item">
+              <div class="contact-list__item__title">
+                Главный офис
+              </div>
+              <div class="contact-list__item__info">
+                <img src="/contacts/location.png" alt="location" />
+                Невский 140,офис 1-5 <br />
+                Невский 140, офис 1-5
+              </div>
+            </div>
+
+            <div class="contact-list__item">
+              <div class="contact-list__item__title">
+                Телефоны
+              </div>
+              <div class="contact-list__item__info">
+                <img src="/contacts/phone.png" alt="phone" />
+                (812) 458-56-45 <br />
+                8-911-878-00-00
+              </div>
+            </div>
+
+            <div class="contact-list__item">
+              <div class="contact-list__item__title">
+                E-mail
+              </div>
+              <div class="contact-list__item__info">
+                <img src="/contacts/mail.png" alt="e-mail" />
+                office@ojjo.com <br />
+                sales@ojjo.com
+              </div>
+            </div>
+
+            <div class="contact-list__item">
+              <div class="contact-list__item__title">
+                Доп. адреса
+              </div>
+              <div class="contact-list__item__info">
+                <img src="/contacts/location.png" alt="location" />
+                Невский 142, офис 1-5 <br />
+                Загородный 145, офис 11-15
+              </div>
+            </div>
+          </div>
+          <!--contac-list-->
+          <img src="/contacts/map.png" alt="map" class="map" />
+        </div>
+        <!--selection-->
+      </div>
+      <!--container-->
+    </div>
+    <!--contacts-->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="column">
+          <h1 class="column__header">Полезные ссылки</h1>
+          <div class="column__content">
+            <ul>
+              Доставка
+            </ul>
+            <ul>
+              Оплата
+            </ul>
+            <ul>
+              Акции
+            </ul>
+            <ul>
+              Политика конфиденциальности
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <h1 class="column__header">оплата</h1>
+          <div class="column__content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Ullamcorper justo, nec, pellentesque.
+            </p>
+            <img src="/footer/column-3/visa.png" alt="visa" />
+            <img src="/footer/column-3/master-card.png" alt="master-card" />
+          </div>
+        </div>
+        <div class="column">
+          <h1 class="column__header">
+            <a href="/pages/contacts.html">контакты</a>
+          </h1>
+          <div class="column__content">
+            <img src="/footer/column-2/phone.png" alt="phone" class="contact-icon"/>8 (812) 234-56-55 <br>
+            <img src="/footer/column-2/phone.png" alt="phone" class="contact-icon" />8 (812) 234-56-55 <br>
+            <img src="/footer/column-2/e-mail.png" alt="e-mail" class="contact-icon" />ojjo@ojjo.ru
+          </div>
+        </div>
+        <div class="column">
+          <h1 class="column__header">социальные сети</h1>
+          <div class="column__content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Ullamcorper justo, nec, pellentesque.
+            </p>
+            <img
+              src="/footer/column-1/icon-youtube.png"
+              alt="youtube"
+              class="footer__column-1"
+            />
+            <img
+              src="/footer/column-1/icon-vk.png"
+              alt="vk"
+              class="footer__column-1"
+            />
+            <img
+              src="/footer/column-1/icon-facebook.png"
+              alt="facebook"
+              class="footer__column-1"
+            />
+            <img
+              src="/footer/column-1/icon-telegram.png"
+              alt="telegram"
+              class="footer__column-1"
+            />
+            <img
+              src="/footer/column-1/icon-etsy.png"
+              alt="etsy"
+              class="footer__column-1"
+            />
+          </div>
+        </div>
+        <div class="last-line">
+          <div class="last-line__content">
+            (c) 2020 OJJO jewelry <span></span> Договор публичной офферты
+            <span></span> Контрагентам <span></span>
+            Сделано Figma.info
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/scripts/menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,243 @@
+/*body {
+  margin: 0;
+  padding: 0;
+  background: #232323;
+  color: #cdcdcd;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  overflow-x: hidden;
+}
+
+> a {
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: tomato;
+  }
+}
+#menuToggle {
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+  > input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+  }
+  > span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+  > span:first-child {
+    transform-origin: 0% 0%;
+  }
+  > span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+}
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  opacity: 1;
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+  position: absolute;
+  width: 500px;
+  margin: -100px 0 0 0;
+  padding: 50px;
+  padding-top: 125px;
+  right: -100px;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  > li {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+}
+#menuToggle input:checked ~ ul {
+  transform: scale(1, 1);
+  opacity: 1;
+}*/
+/*burger menu*/
+body{
+    background: brown;
+}
+
+.menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg); 
+    
+  }
+  .menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+   
+  }
+  .menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+   
+  }
+  .menu__toggle:checked ~ .nav {  
+    left: 0; 
+  }
+  
+  .noScroll{
+    overflow: hidden;
+  }
+  
+  .menu {
+    
+    position: fixed;
+    display: none;
+    &__toggle {
+      opacity: 0;
+    }
+    &__btn {
+      display: flex;
+      align-items: center;
+      position: fixed;
+      top: 3%;
+      left: 88%;
+      width: 26px;
+      height: 26px;
+      cursor: pointer;
+      z-index: 1;
+      > span {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        &::before {
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          background-color: #fff;
+          content: "";
+          top: -8px;
+        }
+        &:after {
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          background-color: #fff;
+          content: "";
+          top: 8px;
+        }
+      }
+    } //btn
+    .nav {
+      display: block;
+      position: fixed;
+      //visibility: hidden;
+      top: 0;
+      //left: -120%;
+      right: -1000px;
+      width: 100%;
+      height: 100vh;
+      margin: 0;
+      padding: 80px 0;
+      list-style: none;
+      text-align: center;
+      background-color: #333333;
+      box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  
+      .link {
+        display: block;
+        padding: 12px 24px;
+        text-decoration: none;
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 21px;
+        line-height: 140%;
+        text-align: left;
+        color: #ffffff;
+        &:last-child {
+          width: 100%;
+          &::after {
+            margin-top: 5%;
+            content: "";
+            display: block;
+            width: 100%;
+            border: 1px solid #ffffff;
+          }
+        }
+      } //link
+      .acc-like-icon {
+        width: 100%;
+        float: left;
+        margin-left: 4%;
+        > img {
+          float: left;        
+          vertical-align: top;
+        }
+        &__acc{
+          width: 5%;
+        }
+        &__like{
+          width: 4%;
+          margin-left: 5%;
+        }
+        &:after {
+          margin-top: 7%;
+          margin-left: -1%;
+          content: "";
+          display: block;
+          width: 100%;
+          border: 1px solid #ffffff;
+        }
+      } //acc-like-icon
+      .social-icon {
+        margin-top: 1%;
+        width: 100%;
+        float: left;
+        margin-left: 4%;
+        > img {
+          float: left;
+        }
+      } //social-icon
+    } //nav
+  } //menu
+  @media screen and(max-width: 940px) {
+      .menu{
+          display: block;
+      }
+  }

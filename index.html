@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Document</title>
+  </head>
+
+  <body id="body">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <nav class="nav">
+            <a href="#" class="nav__link top-text">Контрагентам</a>
+            <a href="#" class="nav__link top-text">Дизайнерам</a>
+            <a href="#" class="nav__link top-text">Вакансии</a>
+          </nav>
+
+          <img src="header/logo/logo.png" alt="logo" class="header__logo" id="header__logo"/>
+
+          <div class="search-line top-text">
+            <img src="header/search/search.png" alt="search-icon" />
+            <div class="search-line__text">Поиск</div>
+          </div>
+
+          <div class="account-line top-text">
+            <div class="account-line__text">Вход/Регистрация</div>
+
+            <img
+              src="header/account/acc.png"
+              alt="account-icon"
+              class="account-line__accimg"
+            />
+            <img src="header/account/like.png"" alt=" like-icon"
+            class="account-line__likeimg">
+          </div>
+
+          <!--burger menu-->
+          <div class="menu">
+            <input type="checkbox" class="menu__toggle" id="menu__toggle" onclick="isMenu()"/>
+            <label for="menu__toggle" class="menu__btn">
+              <span></span>
+            </label>
+            
+            <div class="nav">
+              <img src="header/logo/logo.png" alt="logo" class="header__logo" />
+              <nav>
+                <a href="#" class="link">Контрагентам</a>
+                <a href="#" class="link">Дизайнерам</a>
+                <a href="#" class="link">Вакансии</a>
+                <a href="#" class="link">Вход/Регистрация</a>
+              </nav>
+
+              <div class="acc-like-icon">
+                <img src="header/account/acc.png" alt="account-icon" class="acc-like-icon__acc"/>
+                <img src="header/account/like.png"" alt="like-icon" class="acc-like-icon__like">
+              </div>
+
+              <div class="social-icon">
+                <img
+                  src="/menu/social-icon/youtube.png"
+                  alt="youtube"
+                  class="icon"
+                />
+
+                <img src="/menu/social-icon/vk.png" alt="vk" class="icon" />
+
+                <img
+                  src="/menu/social-icon/facebook.png"
+                  alt="facebook"
+                  class="icon"
+                />
+
+                <img
+                  src="/menu/social-icon/telegram.png"
+                  alt="telegram"
+                  class="icon"
+                />
+
+                <img src="/menu/social-icon/etsy.png" alt="etsy" class="icon" />
+              </div>
+              <!--social-icon-->
+            </div>
+            <!--nav-->
+          </div>
+          <!--menu-->
+        </div>
+        <!--header__inner-->
+      </div>
+      <!--container-->
+    </header>
+    <!--header-->
+
+    <div class="first-screen">
+      <div class="container">
+        <div class="first-screen__inner">
+          <h1 class="first-screen__title">Долго, дорого, богато!</h1>
+          <a href="/pages/catalog.html" class="first-screen__button"
+            >каталог изделий</a
+          >
+
+          <!--<hr class="horisontal-separator" />-->
+          <div class="brands-container">
+            <div class="brands__inner">
+              <div class="brands__inner__item">
+                <img src="header/brand/brand.png" alt="brand" />
+              </div>
+
+              <div class="brands__inner__item">
+                <img src="header/brand/brand.png" alt="brand" />
+              </div>
+              <div class="brands__inner__item">
+                <img src="header/brand/brand.png" alt="brand" />
+              </div>
+              <div class="brands__inner__item">
+                <img src="header/brand/brand.png" alt="brand" />
+              </div>
+
+              <div class="brands__inner__item">
+                <img src="header/brand/brand.png" alt="brand" />
+              </div>
+
+              <div class="brands__inner__item">
+                <img src="header/brand/brand.png" alt="brand" />
+              </div>
+            </div>
+            <!---Brand__inner-->
+          </div>
+          <!--Brands-container-->
+        </div>
+        <!--firs-screen__inner-->
+      </div>
+      <!-- top container-->
+    </div>
+    <!--first-screen-->
+
+    <div class="second-screen">
+      <div class="container">
+        <div class="section">
+          <div class="section__header">
+            <h3 class="section__suptitle">К мероприятиям</h3>
+            <h2 class="section__title">Настоящая красота здесь!</h2>
+          </div>
+          <!--section-header-->
+
+          <div class="list">
+            <ul class="list__item">
+              Свадьба
+            </ul>
+
+            <ul class="list__item">
+              МУЖУ
+            </ul>
+
+            <ul class="list__item">
+              жене
+            </ul>
+
+            <ul class="list__item">
+              партнеру
+            </ul>
+
+            <ul class="list__item">
+              коллекции
+            </ul>
+
+            <ul class="list__item">
+              редкость
+            </ul>
+          </div>
+          <!--list-->
+
+          <div class="categories">
+            <a href="#">
+              <div class="categories__item">
+                <div class="categories__item__img">
+                  <img src="center/categories/rings.png" alt="rings" />
+                </div>
+
+                <div class="categories__item__text">Кольца</div>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="categories__item">
+                <div class="categories__item__img">
+                  <img src="center/categories/earrings.png" alt="aerrings" />
+                </div>
+
+                <div class="categories__item__text">серьги</div>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="categories__item">
+                <div class="categories__item__img">
+                  <img src="center/categories/pendant.png" alt="pedants" />
+                </div>
+
+                <div class="categories__item__text">подвески</div>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="categories__item">
+                <div class="categories__item__img">
+                  <img src="center/categories/cufflink.png" alt="cufflink" />
+                </div>
+                <div class="categories__item__text">запонки</div>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="categories__item">
+                <div class="categories__item__img">
+                  <img src="center/categories/bracelets.png" alt="braslents" />
+                </div>
+                <div class="categories__item__text">браслеты</div>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="categories__item">
+                <div class="categories__item__img">
+                  <img src="center/categories/clock.png" alt="clock" />
+                </div>
+                <div class="categories__item__text">часы</div>
+              </div>
+            </a>
+          </div>
+          <!--categories-->
+        </div>
+        <!--section-->
+      </div>
+      <!--container-->
+    </div>
+    <!--second-screen-->
+
+    <div class="our-salon">
+      <div class="black-section">
+        <div class="container">
+          <div class="black-section__header">
+            <h3 class="black-section__suptitle">Не знаете, что выбрать?</h3>
+            <h2 class="black-section__title">Посетите наши салоны в Москве</h2>
+          </div>
+
+          <p class="our-salon__content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut duis
+            tortor vitae pellentesque egestas quam pulvinar. Pellentesque
+            porttitor velit sit pellentesque. Suspendisse donec pretium id
+            dignissim. Dignissim ultrices eget orci viverra. Egestas quis et ut
+            ultrices imperdiet lectus nulla tempus. Pharetra lorem sem purus
+            nisi libero viverra ipsum.
+          </p>
+
+          <a href="#" class="our-salon__button">наши салоны</a>
+        </div>
+        <!--container-->
+      </div>
+      <!--black-section-->
+    </div>
+    <!--our-salon-->
+
+    <div class="blog">
+      <div class="container">
+        <div class="section">
+          <div class="section__header">
+            <h3 class="section__suptitle">Полезные статьи</h3>
+
+            <h2 class="section__title">
+              Лучшие советы по подбору дорогих подарков
+            </h2>
+          </div>
+
+          <a href="#">
+            <div class="blog__item">
+              <div class="blog__item__img">
+                <img src="blog/clockForWife.png" alt="ClockForWife" />
+              </div>
+              <div class="blog__item__text">
+                Как выбрать<br />
+                часы для своей<br />
+                будущей жены
+              </div>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="blog__item">
+              <div class="blog__item__img">
+                <img src="blog/cufflinkForMan.png" alt="cufflinkForMan" />
+              </div>
+              <div class="blog__item__text">
+                Запонки для мужа: <br />
+                7 ключевых правил <br />
+                покупки аксессуара
+              </div>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="blog__item">
+              <div class="blog__item__img">
+                <img src="blog/RingsForNewlyweds.png" alt="RingsForNewlyweds" />
+              </div>
+              <div class="blog__item__text">
+                Как выбрать <br />
+                обручальные кольца<br />
+                молодоженам
+              </div>
+            </div>
+          </a>
+        </div>
+        <!--section-->
+        <a href="#" class="blog__button">читать наш блог</a>
+      </div>
+      <!--container-->
+    </div>
+    <!--blog-->
+
+    <div class="gallery">
+      <div class="container">
+        <div class="section">
+          <div class="section__header">
+            <h3 class="section__suptitle">#ojjo_jewerly</h3>
+
+            <h2 class="section__title">
+              Мы в социальных сетях
+            </h2>
+          </div>
+
+          <!--header-->
+          <div class="gallery__items">
+            <div class="gallery__items__item">
+              <video
+                src="#"
+                poster="gallery/video/video1.png"
+                class="video"
+              ></video>
+              <img src="gallery/video/PLAY.png" alt="" class="video__play" />
+            </div>
+
+            <div class="gallery__items__item">
+              <img src="gallery/img/gallery__image1.png" alt="image1" />
+            </div>
+
+            <div class="gallery__items__item">
+              <img src="gallery/img/gallery__image2.png" alt="image2" />
+            </div>
+
+            <div class="gallery__items__item">
+              <img src="gallery/img/gallery__image3.png" alt="image3" />
+            </div>
+
+            <div class="gallery__items__item">
+              <img src="gallery/img/gallery__image4.png" alt="image4" />
+            </div>
+
+            <div class="gallery__items__item">
+              <video
+                src="#"
+                poster="gallery/video/video2.png"
+                class="video"
+              ></video>
+
+              <img src="gallery/video/PLAY.png" alt="" class="video__play" />
+            </div>
+          </div>
+          <!--gallery__items-->
+        </div>
+        <!--section-->
+      </div>
+      <!--container-->
+    </div>
+    <!--galery-->
+
+    <div class="subscribe">
+      <div class="black-section">
+        <div class="container">
+          <div class="black-section__header">
+            <h3 class="black-section__suptitle">
+              Полезные советы и персональный предложения
+            </h3>
+
+            <h2 class="black-section__title">Эксклюзивная рассылка</h2>
+          </div>
+          <!--header-->
+
+          <div class="subscribe-content">
+            <div class="list">
+              <li>
+                <a href="#" class="list__item"> Личный менеджер</a>
+              </li>
+              <li>
+                <a href="#" class="list__item">Доставка и оформление</a>
+              </li>
+              <li>
+                <a href="#" class="list__item">Индивидуальный дизайн</a>
+              </li>
+            </div>
+            <!--list-->
+
+            <div class="form">
+              <div class="form__border">
+                <div class="form__bg">
+                  <input
+                    type="email"
+                    class="form__input"
+                    placeholder="ВАШ E-MAIL"
+                  />
+
+                  <div class="form__button">
+                    <a href="#" class="form__button__text">ОТПРАВИТЬ</a>
+                  </div>
+                </div>
+                <!--form__bg-->
+              </div>
+              <!--form__border-->
+            </div>
+            <!--form-->
+          </div>
+          <!--subscribe-conent-->
+        </div>
+        <!--container-->
+      </div>
+      <!--black-section-->
+    </div>
+    <!--subscribe-->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="column">
+          <h1 class="column__header">Полезные ссылки</h1>
+
+          <div class="column__content">
+            <ul>
+              Доставка
+            </ul>
+            <ul>
+              Оплата
+            </ul>
+            <ul>
+              Акции
+            </ul>
+            <ul>
+              Политика конфиденциальности
+            </ul>
+          </div>
+        </div>
+
+        <div class="column">
+          <h1 class="column__header">оплата</h1>
+          <div class="column__content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Ullamcorper justo, nec, pellentesque.
+            </p>
+            <img src="footer/column-3/visa.png" alt="visa" />
+            <img src="footer/column-3/master-card.png" alt="master-card" />
+          </div>
+        </div>
+
+        <div class="column">
+          <h1 class="column__header">
+            <a href="/pages/contacts.html">контакты</a>
+          </h1>
+          <div class="column__content">
+            <img src="/footer/column-2/phone.png" alt="phone" class="contact-icon"/>8 (812) 234-56-55 <br>
+            <img src="/footer/column-2/phone.png" alt="phone" class="contact-icon" />8 (812) 234-56-55 <br>
+            <img src="/footer/column-2/e-mail.png" alt="e-mail" class="contact-icon" />ojjo@ojjo.ru
+          </div>
+        </div>
+
+        <div class="column">
+          <h1 class="column__header">социальные сети</h1>
+          <div class="column__content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Ullamcorper justo, nec, pellentesque.
+            </p>
+            <img
+              src="footer/column-1/icon-youtube.png"
+              alt="youtube"
+              class="footer__column-1"
+            />
+            <img
+              src="footer/column-1/icon-vk.png"
+              alt="vk"
+              class="footer__column-1"
+            />
+            <img
+              src="footer/column-1/icon-facebook.png"
+              alt="facebook"
+              class="footer__column-1"
+            />
+            <img
+              src="footer/column-1/icon-telegram.png"
+              alt="telegram"
+              class="footer__column-1"
+            />
+            <img
+              src="footer/column-1/icon-etsy.png"
+              alt="etsy"
+              class="footer__column-1"
+            />
+          </div>
+        </div>
+
+        <div class="last-line">
+          <div class="last-line__content">
+            (c) 2020 OJJO jewelry <span></span> Договор публичной офферты
+            <span></span> Контрагентам <span></span>
+            Сделано Figma.info
+          </div>
+        </div>
+        <!--last-line-->
+      </div>
+      <!--container-->
+    </footer>
+    <script src="/scripts/menu.js"></script>
+  </body>
+</html>
